@@ -1,14 +1,16 @@
 --[[
-    GD50 2018
-    Pong Remake
+    Remake Game Pong 
+    
+    pong-0
+    "The Day-0 Update"
 
-    pong-1
-    "The Low-Res Update"
+    -- Program Utama --
 
-    -- Main Program --
-
-    Author: Colton Ogden
+    Penulis kode : Colton Ogden
     cogden@cs50.harvard.edu
+    
+    diedit oleh : Ardhi Wijayanto
+    ardhi.wijayanto[at]staff.uns.ac.id
 
     Originally programmed by Atari in 1972. Features two
     paddles, controlled by players, with the goal of getting
@@ -34,7 +36,7 @@ VIRTUAL_WIDTH = 432
 VIRTUAL_HEIGHT = 243
 
 --[[
-    Runs when the game first starts up, only once; used to initialize the game.
+    Fungsi ini dijalankan pertama kali ketika game dimulai, untuk menginisialisasi game
 ]]
 function love.load()
     -- use nearest-neighbor filtering on upscaling and downscaling to prevent blurring of text 
@@ -64,8 +66,7 @@ function love.keypressed(key)
 end
 
 --[[
-    Called after update by LÖVE2D, used to draw anything to the screen, 
-    updated or otherwise.
+    Digunakan untuk menggambar ke screen
 ]]
 function love.draw()
     -- begin rendering at virtual resolution
