@@ -1,19 +1,17 @@
 --[[
-    GD50 2018
-    Pong Remake
-
+    Remake Game Pong 
+    
     pong-0
     "The Day-0 Update"
-
-    -- Main Program --
-
-    Author: Colton Ogden
+    -- Program Utama --
+    Penulis kode : Colton Ogden
     cogden@cs50.harvard.edu
-
+    
+    diedit oleh : Ardhi Wijayanto
+    ardhi.wijayanto[at]staff.uns.ac.id
     Originally programmed by Atari in 1972. Features two
     paddles, controlled by players, with the goal of getting
     the ball past your opponent's edge. First to 10 points wins.
-
     This version is built to more closely resemble the NES than
     the original Pong machines or the Atari 2600 in terms of
     resolution, though in widescreen (16:9) so it looks nicer on 
@@ -24,7 +22,7 @@ WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 720
 
 --[[
-    Runs when the game first starts up, only once; used to initialize the game.
+    Fungsi ini dijalankan pertama kali ketika game dimulai, untuk menginisialisasi game
 ]]
 function love.load()
     love.window.setMode(WINDOW_WIDTH, WINDOW_HEIGHT, {
@@ -35,7 +33,7 @@ function love.load()
 end
 
 --[[
-    Called after update by LÖVE2D, used to draw anything to the screen, updated or otherwise.
+    Digunakan untuk menggambar ke screen
 ]]
 function love.draw()
     love.graphics.printf(
