@@ -18,6 +18,7 @@
     modern systems.
 ]]
 
+-- ukuran window tampilan game (dalam pixel)
 WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 720
 
@@ -33,13 +34,14 @@ function love.load()
 end
 
 --[[
-    Digunakan untuk menggambar ke screen
+    Digunakan untuk menggambar window ke screen
 ]]
 function love.draw()
+	-- https://love2d.org/wiki/love.graphics.printf
     love.graphics.printf(
-        'Hello Pong!',          -- text to render
-        0,                      -- starting X (0 since we're going to center it based on width)
-        WINDOW_HEIGHT / 2 - 6,  -- starting Y (halfway down the screen)
-        WINDOW_WIDTH,           -- number of pixels to center within (the entire screen here)
-        'center')               -- alignment mode, can be 'center', 'left', or 'right'
+        'Hello Pong!',          -- teks yang ditampilkan
+        0,                      -- posisi di sumbu X (0 krn akan diletakkan di tengah berdasarkan width-nya)
+        WINDOW_HEIGHT / 2 - 6,  -- posisi di sumbu Y (setengah layar)
+        WINDOW_WIDTH,           -- jumlah pixel ke tengah (the entire screen here) 
+        'center')               -- alignment mode, bisa diisi 'center', 'left', atau 'right'
 end
