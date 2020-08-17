@@ -22,16 +22,17 @@
     modern systems.
 ]]
 
--- push is a library that will allow us to draw our game at a virtual
--- resolution, instead of however large our window is; used to provide
--- a more retro aesthetic
---
+-- push adalah library yang memungkinkan untuk menggambar tampilan game dalam resolusi virtual
+-- tanpa tergantung pada ukuran layar monitor
+-- ini dapat mempercantik tampilan
 -- https://github.com/Ulydev/push
 push = require 'push'
 
+-- ukuran window tampilan window game (dalam pixel)
 WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 720
 
+-- ukuran resolusi virtual
 VIRTUAL_WIDTH = 432
 VIRTUAL_HEIGHT = 243
 
@@ -39,8 +40,7 @@ VIRTUAL_HEIGHT = 243
     Fungsi ini dijalankan pertama kali ketika game dimulai, untuk menginisialisasi game
 ]]
 function love.load()
-    -- use nearest-neighbor filtering on upscaling and downscaling to prevent blurring of text 
-    -- and graphics; try removing this function to see the difference!
+    -- menggunakan nearest-neighbor filtering pada upscaling and downscaling untuk mencegah blur pada teks dan grafis
     love.graphics.setDefaultFilter('nearest', 'nearest')
 
     -- initialize our virtual resolution, which will be rendered within our
@@ -66,7 +66,7 @@ function love.keypressed(key)
 end
 
 --[[
-    Digunakan untuk menggambar ke screen
+    Digunakan untuk menggambar window ke screen
 ]]
 function love.draw()
     -- begin rendering at virtual resolution
