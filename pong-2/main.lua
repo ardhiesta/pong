@@ -60,7 +60,7 @@ end
 function love.keypressed(key)
     -- keys can be accessed by string name
     if key == 'escape' then
-        -- function LÖVE gives us to terminate application
+        -- klik tombol Escape akan menutup aplikasi
         love.event.quit()
     end
 end
@@ -75,16 +75,13 @@ function love.draw()
 
     -- clear the screen with a specific color; in this case, a color similar
     -- to some versions of the original Pong
-    love.graphics.clear(40, 45, 52, 255)
+    --love.graphics.clear(40, 45, 52, 255)
+    --kalau aktif ini bikin blank
 
     -- draw welcome text toward the top of the screen
     love.graphics.printf('Hello Pong!', 0, 20, VIRTUAL_WIDTH, 'center')
 
-    --
-    -- paddles are simply rectangles we draw on the screen at certain points,
-    -- as is the ball
-    --
-
+    -- menggambar bilah pemantul dan bola 
     -- render first paddle (left side)
     love.graphics.rectangle('fill', 10, 30, 5, 20)
 
