@@ -60,7 +60,7 @@ end
 function love.keypressed(key)
     -- keys can be accessed by string name
     if key == 'escape' then
-        -- function LÖVE gives us to terminate application
+        -- klik tombol Escape akan menutup aplikasi
         love.event.quit()
     end
 end
