@@ -59,11 +59,11 @@ function love.load()
         vsync = true
     })
 
-    -- paddle positions on the Y axis (they can only move up or down)
+    -- mengatur posisi papan pemantul di sumbu Y (sehiangga bisa digerakkan ke atas atau ke bawah)
     player1Y = 30
     player2Y = VIRTUAL_HEIGHT - 50
 
-    -- velocity and position variables for our ball when play starts
+    -- atur kecepatan dan posisi bola ketika permainan dimulai
     ballX = VIRTUAL_WIDTH / 2 - 2
     ballY = VIRTUAL_HEIGHT / 2 - 2
 
@@ -153,7 +153,7 @@ function love.draw()
 
     -- clear the screen with a specific color; in this case, a color similar
     -- to some versions of the original Pong
-    love.graphics.clear(40, 45, 52, 255)
+    --love.graphics.clear(40, 45, 52, 255)
 
     -- draw different things based on the state of the game
     love.graphics.setFont(smallFont)
