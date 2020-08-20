@@ -1,3 +1,6 @@
+-- push is a simple resolution-handling library that allows you to focus on making your game with a fixed resolution.
+-- https://github.com/Ulydev/push/
+
 -- push.lua v0.3
 
 -- Copyright (c) 2018 Ulysse Ramage
